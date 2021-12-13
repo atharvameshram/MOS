@@ -8,8 +8,8 @@ There mainly 3 components of the MOS:
   - Line Printer
 1. Along every phase of the MOS, CPU definitions such as Memory, Registers, etc becomes more structured.
 2. Card Reader is the input given (from an input .txt file) to the CPU with a defined structure as follows -
-    - $AMJ000100010001AMJ 
-        - A Multiprogramming Job
+    - $AMJ000100010001
+        - AMJ ~ A Multiprogramming Job
         - The next 3 numbers of 4 digits each represent
             - a. Job Id
             - b. Total Time Limit
