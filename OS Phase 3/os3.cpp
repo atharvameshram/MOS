@@ -48,10 +48,10 @@ void mos(){
             break;
         case 5:
             IR1();
-            //IR3();
+            IR3();
             break;
         case 6:
-            //IR3();
+            IR3();
             //IR2();
             break;
         case 7:
@@ -67,7 +67,7 @@ void mos(){
 }
 
 void IR1(){
-    int m;                                  //Variable to hold memory location
+    //int m;                                  //Variable to hold memory location
     //int currPTR;                            //Points to the last empty location in Page Table Register
     char temp[5];                           //Temporary Variable to check for $AMJ, $DTA, $END
     //memset(buffer, '\0', 40);
@@ -118,7 +118,7 @@ void IR1(){
         else if(!strcmp(temp,"$END")){
             //PLACE PCB ON LQ
             cout << "END" << endl;
-            LQ.push(pcb.job_id);
+            LQ.push(pcb);
 
             memset(supervisoryStorage[ifb.front()], '\0', 40);
             efb.push(ifb.front());
@@ -127,7 +127,7 @@ void IR1(){
             /*if(!LQ.empty()){
                 IR3("LD");
             }*/
-            //......
+
             simulation(1);
         }
         else{
@@ -135,31 +135,10 @@ void IR1(){
             if(!ifb.empty()){
                 caseTask = "IS";
                 IR3();
-                //simulation(3);
+                simulation(1);
             }
-            simulation(1);
-/*
-            if(breakFlag) continue;
-            
-            do{
-                m = allocate();
-            }while(M[m*10][0]!='\0');
+            //simulation(1);
 
-            itoa(m, M[currPTR], 10);
-            currPTR++;
-
-            strcpy(M[m*10],supervisoryStorage[ifb.front()]);
-
-            cout << "PTR = " << PTR << endl;
-            for(int i=0; i<300; i++){
-                cout<<"M["<<i<<"] :";
-                for(int j=0 ; j<4; j++){
-                    cout<<M[i][j];
-                }
-                cout<<endl;
-            }
-            cout<<endl;
-*/
         }
     }
 }
@@ -209,7 +188,7 @@ void IR3(){
             cout<<endl;
         }
         cout<<endl;
-            
+
         memset(supervisoryStorage[ifb.front()], '\0', 40);
         efb.push(ifb.front());
         ifb.pop();
@@ -217,11 +196,11 @@ void IR3(){
     else if(caseTask == "LD"){
         while(pcb.F == 'P' ? pcb.pCount : pcb.dCount){
             int m;
-/*          do
+          do
             {
                 m = allocate() * 10;
             } while (auxiliaryStorage[m][0] != '\0');
-*/
+
             int currPTR = PTR;
             while(mainMemory[currPTR][0]!='*')
                 currPTR++;

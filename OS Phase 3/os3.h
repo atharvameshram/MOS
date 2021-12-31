@@ -31,11 +31,6 @@ queue<int> efb;                         //Empty Buffer Queue
 queue<int> ifb;                         //Inputful Buffer Queue
 queue<int> ofb;                         //Outputful Buffer Queue
 
-queue<int> LQ;                                 //Load Queue
-queue<int> RQ;                                 //Ready Queue
-queue<int> IOQ;                                //Input-Output Queue
-queue<int> TQ;                                 //Terminate Queue
-
 int SI;                                 //Service Interrupt
 int PI;                                 //Program Interrupt
 int TI;                                 //Time Interrupt
@@ -79,6 +74,11 @@ struct PCB{
 };
 
 PCB pcb;                        //Global Process Control Block
+
+queue<PCB> LQ;                                 //Load Queue
+queue<PCB> RQ;                                 //Ready Queue
+queue<PCB> IOQ;                                //Input-Output Queue
+queue<PCB> TQ;                                 //Terminate Queue
 
 /*Error Messages*/
 string error[7] = {"No Error", "Out of Data", "Line Limit Exceeded", "Time Limit Exceeded",
