@@ -2,21 +2,40 @@ Initialising...
 In Master mode, SI = 0, PI = 0, TI = 0, IOI = 1
 IOI = 0, IR1 -- IR1 simulate -- chID = 1, Clock = 0, TTC = 0, Clock = 5, TTC = 5, IOI = 7
 In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
-IOI = 5, IR2 -- 
-IOI = 4, IR1 -- IR1 simulate -- chID = 1, Clock = 5, TTC = 5, Clock = 10, TTC = 10, IOI = 7
-IOI = 3, IR3 -- IR3 simulate -- chID = 3, Clock = 10, TTC = 10, Clock = 12, TTC = 12, IOI = 7
+IOI = 6, IR1 -- IR1 simulate -- chID = 1, Clock = 5, TTC = 5, Clock = 10, TTC = 10, IOI = 7
+IOI = 3, IR3 -- IR3 simulate IS -- chID = 3, Clock = 10, TTC = 10, Clock = 12, TTC = 12, IOI = 7
 In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
-IOI = 5, IR2 -- 
-IOI = 4, IR1 -- IR1 simulate -- chID = 1, Clock = 12, TTC = 12, Clock = 17, TTC = 17, IOI = 7
-IOI = 3, IR3 -- 
-In Master mode, SI = 0, PI = 0, TI = 0, IOI = 3
-IOI = 1, IR2 -- 
-IOI = 0, IR1 -- IR1 simulate -- chID = 1, Clock = 17, TTC = 17, Clock = 22, TTC = 22, IOI = 7
+IOI = 6, IR1 -- IR1 simulate -- chID = 1, Clock = 12, TTC = 12, Clock = 17, TTC = 17, IOI = 7
+IOI = 7, IR3 -- 
 In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
-IOI = 5, IR2 -- 
-IOI = 4, IR1 -- IR1 simulate -- chID = 1, Clock = 22, TTC = 22, Clock = 27, TTC = 27, IOI = 7
-IOI = 3, IR3 -- IR3 simulate -- chID = 3, Clock = 27, TTC = 27, Clock = 29, TTC = 29, IOI = 7
+IOI = 6, IR1 -- IR1 simulate -- chID = 1, Clock = 17, TTC = 17, Clock = 22, TTC = 22, IOI = 7
+IOI = 3, IR3 -- IR3 simulate IS -- chID = 3, Clock = 22, TTC = 22, Clock = 24, TTC = 24, IOI = 7
 In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
-IOI = 5, IR2 -- 
-IOI = 4, IR1 -- 
-IOI = 0, IR3 -- 
+IOI = 6, IR1 -- IR1 simulate -- chID = 1, Clock = 24, TTC = 24, Clock = 29, TTC = 29, IOI = 7
+IOI = 3, IR3 -- IR3 simulate LD -- chID = 3, Clock = 29, TTC = 29, Clock = 31, TTC = 31, IOI = 7
+In Master mode, SI = 0, PI = 3, TI = 0, IOI = 7
+Clock = 31, TTC = 31, Clock = 32, TTC = 32
+In Master mode, SI = 1, PI = 0, TI = 0, IOI = 7
+IOI = 3, IR3 -- IR3 simulate RD -- chID = 3, Clock = 32, TTC = 32, Clock = 34, TTC = 34, IOI = 7
+Clock = 34, TTC = 34, Clock = 35, TTC = 35
+In Master mode, SI = 2, PI = 0, TI = 0, IOI = 7
+IOI = 3, IR3 -- IR3 simulate WT -- chID = 3, Clock = 35, TTC = 35, Clock = 37, TTC = 37, IOI = 7
+Clock = 37, TTC = 37, Clock = 38, TTC = 38
+In Master mode, SI = 3, PI = 0, TI = 0, IOI = 7
+Clock = 38, TTC = 38, Clock = 39, TTC = 39
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 3, IR3 -- IR3 simulate OS -- chID = 3, Clock = 39, TTC = 0, Clock = 41, TTC = 2, IOI = 7
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 5, IR2 -- IR2 simulate -- chID = 2, Clock = 41, TTC = 2, Clock = 46, TTC = 7, IOI = 7
+IOI = 7, IR3 -- 
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 5, IR2 -- IR2 simulate -- chID = 2, Clock = 46, TTC = 7, Clock = 51, TTC = 12, IOI = 7
+IOI = 7, IR3 -- 
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 5, IR2 -- IR2 simulate -- chID = 2, Clock = 51, TTC = 12, Clock = 56, TTC = 17, IOI = 7
+IOI = 7, IR3 -- 
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 5, IR2 -- IR2 simulate -- chID = 2, Clock = 56, TTC = 17, Clock = 61, TTC = 22, IOI = 7
+IOI = 7, IR3 -- 
+In Master mode, SI = 0, PI = 0, TI = 0, IOI = 7
+IOI = 7, IR3 -- 
